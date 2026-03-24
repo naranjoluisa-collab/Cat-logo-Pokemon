@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Shop</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Catalogostyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo-principal text-center py-4">⚡ Pokémon Shop ⚡</h1>
+        <div id="catalogoProductos" class="productos row g-3"></div>
+    </div>
+
+    <div id="miModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nombreModal">Nombre Pokémon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img id="imagenModal" class="img-fluid rounded" style="max-height: 250px;" />
+                    </div>
+                    <p id="descripcionModal" class="text-center fst-italic mb-4"></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>🔥 Tipo:</strong> <span id="tipoModal"></span></p>
+                            <p><strong>🌍 Generación:</strong> <span id="generacionModal"></span></p>
+                            <p><strong>⭐ Nivel:</strong> <span id="nivelModal"></span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>🃏 Edición:</strong> <span id="edicionModal"></span></p>
+                            <p><strong>📦 Disponibilidad:</strong> <span id="disponibilidadModal"></span></p>
+                            <p><strong>💵 Precio:</strong> <span id="precioModal"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning">🛒 Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Js4.js"></script>
+</body>
+</html>
